@@ -6,15 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-final class PostsController extends AbstractController
+final class TestController extends AbstractController
 {
-    #[Route('/posts')]
+    #[Route('/', name: 'homepage')]
     public function index(): Response
     {
-        $number = random_int(0, 100);
-
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
+        return $this->render('test/index.html.twig', [
+            'controller_name' => 'TestController',
+        ]);
     }
 }

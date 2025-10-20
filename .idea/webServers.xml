@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="10ec6b25-7223-4831-a6de-8e1cec9b704c" name="vargant" url="http://localhost">
+        <fileTransfer mountedRoot="$USER_HOME$/OrbStack/centos/var/www/html/symfony" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

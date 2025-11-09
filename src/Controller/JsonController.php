@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class JsonController extends AbstractController
 {
-    #[Route('/{json}', name: 'app_json')]
+    #[Route('/json', name: 'app_json')]
     public function index(): JsonResponse
     {
         return new JsonResponse([

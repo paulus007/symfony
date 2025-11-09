@@ -2,8 +2,12 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="10ec6b25-7223-4831-a6de-8e1cec9b704c" name="vargant" url="http://centos.orb.local">
-        <fileTransfer mountedRoot="$USER_HOME$/OrbStack/centos/var/www/html/symfony" accessType="MOUNT" port="0" />
+      <webServer id="10ec6b25-7223-4831-a6de-8e1cec9b704c" name="vargant" url="http://symfony.centos.orb.local">
+        <fileTransfer rootFolder="/var/www/html/symfony" accessType="SFTP" host="centos@orb" port="22" sshConfigId="93bb6c31-08ae-46cd-99c1-146dfa50a8d0" sshConfig="pavel@centos@orb:22 password">
+          <advancedOptions>
+            <advancedOptions keepAliveTimeout="0" />
+          </advancedOptions>
+        </fileTransfer>
       </webServer>
     </option>
   </component>
